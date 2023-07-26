@@ -35,3 +35,24 @@ Tópico é um canal de comunicação responsável por receber e disponibilizar o
 - No caso do tópico, as mensagems pode ser lidas por dois sistemas ( ao contrário do Rabbit MQ  e SQS ).
 - Um toc é como se fosse um Log.
 - Salva em disco ( ao contrário do Rabbit MQ por padrão)
+
+## Partições
+Anatomia de um registro
+
+
+Cada tópico pode ter uma ou mais partições para conseguir garantir a distribuição e resiliência de seus dados.
+
+
+Mandei uma mensagem -> ela cai no tópico e é guardada em uma partição
+### Offset  / Mensagem
+- Headers
+- Key
+- Value
+- Timestamp
+
+## Consumer groups
+Maneira que o kafka utiliza para dividir as mensagens entre tópicos e os consumers
+
+## Outras referências
+
+https://medium.com/@alvarobacelar/entendendo-como-um-consumidor-kafka-funciona-ee72237904c8#:~:text=Um%20t%C3%B3pico%20%C3%A9%20distribu%C3%ADdo%20entre,a%20cria%C3%A7%C3%A3o%2C%20mas%20nunca%20diminu%C3%ADdo.
